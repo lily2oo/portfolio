@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" ,user-scalable=yes>
+    <meta name="format-detection" content="email=no,telephone=no,address=no">
+    <meta name="description" content="写真家　須古純平　suko　jumpei のポートフォリオサイトです。" />
+    <title>須古純平</title>
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/colorbox.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <script src="./js/vendor/modernizr.custom.min.js"></script>
+    <script src="./js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="./js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="./js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/vendor/masonry.pkgd.min.js"></script>
+    <script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="./js/vendor/jquery.colorbox-min.js"></script>
+    <script src="./js/gallery.js"></script>
+</head>
+
+<body>
+
+    <header class="page-header" role="banner">
+        <div class="inner clearfix">
+            <h1 class="site-logo"><a href="./"><img src="./sozai/suko.png" alt="jun"></a></h1>
+            <form class="filter-form" id="gallery-filter">
+                <span class="form-item">
+                    <input type="radio" name="filter" id="filter-all" value="all" checked>
+                    <label for="filter-all">All</label>
+                </span>
+                <span class="form-item">
+                    <input type="radio" name="filter" id="filter-portraits" value="portraits">
+                    <label for="filter-portraits">portraits</label>
+                </span>
+                <span class="form-item">
+                    <input type="radio" name="filter" id="filter-landscapes" value="landscapes">
+                    <label for="filter-landscapes">landscapes</label>
+                </span>
+
+            </form>
+        </div>
+    </header>
+
+    <div class="page-main" role="main">
+        <ul class="gallery" id="gallery"></ul>
+        <button class="load-more" id="load-more">Load more</button>
+    </div>
+    <aside>
+        <ul>
+            <li> <a href="https://www.instagram.com/_lily_2oo_/">Instagram</a></li>
+            <li> <a href="./index.html">top</a></li>
+            <li> <a href="./about.html">profile</a></li>
+        </ul>
+        <button><img src="sozai/menu/btn_open.png"></button>
+    </aside>
+</body></html>

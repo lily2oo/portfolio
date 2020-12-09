@@ -1,0 +1,596 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Helvetica Neue",
+        Arial,
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+    background-color: #fdfdfb;
+}
+
+@media screen and (min-width: 1025px) {
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .wrap {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: block;
+        line-height: 0;
+
+
+    }
+
+    header {
+        height: 2%;
+        width: 100%;
+    }
+
+    .logo {
+        height: 100%;
+        width: 100%;
+
+    }
+
+    #yoko {
+        display: none;
+    }
+
+    .logo img {
+        height: 250px;
+        position: relative;
+        bottom: 8px;
+        left: 5%;
+        z-index: 2;
+        opacity: 60%;
+    }
+
+    main {
+        height: 96%;
+        width: 100%;
+        float: right;
+
+    }
+
+    .top {
+        height: 100%;
+        width: 100%;
+    }
+
+    .pc {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .pc img {
+        height: 100%;
+        width: auto;
+        position: absolute;
+        top: 0;
+        left: 45%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        display: none;
+        z-index: 1;
+    }
+
+    .tab {
+        display: none;
+    }
+
+    .sp {
+        display: none;
+    }
+
+    aside {
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 250px;
+        height: 100%;
+        top: 0;
+        left: -250px;
+        position: fixed;
+        z-index: 3;
+    }
+
+    aside ul {
+        margin: 0;
+        padding: 0;
+        top: 50px;
+        left: 114px;
+        position: absolute;
+    }
+
+    aside ul li {
+        margin: 0 0 20px;
+        list-style: none;
+        text-align: left;
+    }
+
+    aside ul li a {
+        font-size: 20px;
+        color: #fdfdfb;
+        text-decoration: none;
+        line-height: 50px;
+    }
+
+    aside ul li a:hover {
+        color: rgba(104, 165, 218, 0.6);
+    }
+
+    aside button {
+        background-color: rgba(104, 165, 218, 0.8);
+        display: block;
+        position: absolute;
+        top: 500px;
+        left: 250px;
+        width: 52px;
+        height: 132px;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    footer {
+        height: 2%;
+        width: 100%;
+    }
+
+    footer p {
+        color: rgba(104, 165, 218, 0.6);
+        position: relative;
+        left: 88%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1024px) and (min-width:480px) {
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .wrap {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: block;
+        line-height: 0;
+
+
+    }
+
+    header {
+        height: 15%;
+        width: 100%;
+    }
+
+    .side1 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+
+    .logo {
+        height: 100%;
+        width: 100%;
+
+    }
+
+    #tate {
+        display: none;
+    }
+
+    .logo img {
+        height: 120%;
+        position: relative;
+        z-index: 2;
+        opacity: 60%;
+
+    }
+
+    main {
+        height: 78%;
+        width: 100%;
+    }
+
+    .top {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    .tab {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .tab img {
+        height: auto;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        display: none;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: none;
+    }
+
+    .side2 {
+        display: none;
+    }
+
+    aside {
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 250px;
+        height: 100%;
+        top: 0;
+        left: -250px;
+        position: fixed;
+        z-index: 3;
+    }
+
+    aside ul {
+        margin: 0;
+        padding: 0;
+        top: 50px;
+        left: 114px;
+        position: absolute;
+    }
+
+    aside ul li {
+        margin: 0 0 20px;
+        list-style: none;
+        text-align: left;
+    }
+
+    aside ul li a {
+        font-size: 20px;
+        color: #fdfdfb;
+        text-decoration: none;
+        line-height: 50px;
+    }
+
+    aside ul li a:hover {
+        color: #e5eaeb;
+    }
+
+    aside button {
+        background-color: rgba(104, 165, 218, 0.8);
+        display: block;
+        position: absolute;
+        top: 80%;
+        left: 250px;
+        width: 52px;
+        height: 132px;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    footer {
+        height: 7%;
+        width: 100%;
+    }
+
+    footer p {
+        color: rgba(104, 165, 218, 0.6);
+        font-size: 150%;
+        text-align: right;
+        position: relative;
+        right: 2%;
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .wrap {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: block;
+        line-height: 0;
+
+
+    }
+
+    header {
+        height: 12%;
+        width: 100%;
+    }
+
+    .side1 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+
+    .logo {
+        height: 100%;
+        width: 100%;
+
+    }
+
+    #tate {
+        display: none;
+    }
+
+    .logo img {
+        height: 100%;
+        position: relative;
+        z-index: 2;
+        opacity: 60%;
+
+    }
+
+
+    main {
+        height: 78%;
+        width: 100%;
+    }
+
+    .top {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    .sp {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .sp img {
+        height: auto;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .tab {
+        display: none;
+    }
+
+    .side2 {
+        display: none;
+    }
+
+    aside {
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 250px;
+        height: 100%;
+        top: 0;
+        left: -250px;
+        position: fixed;
+        z-index: 3;
+    }
+
+    aside ul {
+        margin: 0;
+        padding: 0;
+        top: 50px;
+        left: 114px;
+        position: absolute;
+    }
+
+    aside ul li {
+        margin: 0 0 20px;
+        list-style: none;
+        text-align: left;
+    }
+
+    aside ul li a {
+        font-size: 20px;
+        color: #fdfdfb;
+        text-decoration: none;
+        line-height: 50px;
+    }
+
+    aside ul li a:hover {
+        color: #e5eaeb;
+    }
+
+    aside button {
+        background-color: rgba(104, 165, 218, 0.8);
+        display: block;
+        position: absolute;
+        top: 80%;
+        left: 250px;
+        width: 52px;
+        height: 132px;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    footer {
+        height: 10%;
+        width: 100%;
+    }
+
+    footer p {
+        color: rgba(104, 165, 218, 0.6);
+        font-size: 100%;
+        position: relative;
+        top: 50%;
+        right: 2%;
+        text-align: right;
+    }
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
