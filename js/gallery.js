@@ -193,7 +193,7 @@ $(function () {
                     .attr("src", "sozai/menu/btn_close.png");
             } else {
                 $aside.stop(true).animate({
-                    left: "-250px"
+                    left: "-350px"
                 }, duration, "easeInBack");
                 $asidButton.find("img")
                     .attr("src", "sozai/menu/btn_open.png");
